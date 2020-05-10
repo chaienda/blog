@@ -61,14 +61,15 @@
             </span>
         </div>
     </form>
-        <script id="search-teamplate" type="text/html">
+        
+<script id="search-teamplate" type="text/html" data-path="/blog/content.json">
     <div>
         <div class="search-header bg-gray-400">
             <input id="actual-search-input" model="keyword" ref="input" class="inline-block w-full h-10 px-2 py-1" placeholder="搜索" type="text">
         </div>
         <div class="search-result bg-gray-200">
             {{#each searchPosts}}
-            <a href="/{{ path }}" class="result-item block px-2 pb-3 mb-1 pt-1 hover:bg-indigo-100">
+            <a href="/blog/{{ path }}" class="result-item block px-2 pb-3 mb-1 pt-1 hover:bg-indigo-100">
                 <i class="iconfont icon-file"></i>
                 <h1 class="result-title inline font-medium text-lg">{{ title }}</h1>
                 <p class="result-content text-gray-600 text-sm">{{{ text }}}</p>
@@ -147,35 +148,35 @@
 <div class="social-links lg:hidden px-6 my-2 sm:mt-48">
     
         <span class="social-item mr-2 mb-2">
-            <a href="https://github.com/itchbelief" target="_blank" rel="noopener" class="lg:my-1 lg:mx-2 lg:px-4 lg:py-2 sm:px-5 sm:py-2">
+            <a href="https://github.com/itchbelief" target="_blank" rel="noopener" class="lg:my-1 lg:mx-2 lg:px-4 lg:py-2 sm:py-2">
                 <i class="iconfont icon-github"></i>
                 <span class="menu-title hidden lg:inline">menu.github</span>
             </a>
         </span>
     
         <span class="social-item mr-2 mb-2">
-            <a href="https://gitee.com/itch_142" target="_blank" rel="noopener" class="lg:my-1 lg:mx-2 lg:px-4 lg:py-2 sm:px-5 sm:py-2">
+            <a href="https://gitee.com/itch_142" target="_blank" rel="noopener" class="lg:my-1 lg:mx-2 lg:px-4 lg:py-2 sm:py-2">
                 <i class="iconfont icon-gitee"></i>
                 <span class="menu-title hidden lg:inline">menu.gitee</span>
             </a>
         </span>
     
         <span class="social-item mr-2 mb-2">
-            <a href="https://t.me/itchbelief" target="_blank" rel="noopener" class="lg:my-1 lg:mx-2 lg:px-4 lg:py-2 sm:px-5 sm:py-2">
+            <a href="https://t.me/itchbelief" target="_blank" rel="noopener" class="lg:my-1 lg:mx-2 lg:px-4 lg:py-2 sm:py-2">
                 <i class="iconfont icon-telegram"></i>
                 <span class="menu-title hidden lg:inline">menu.telegram</span>
             </a>
         </span>
     
         <span class="social-item mr-2 mb-2">
-            <a href="https://twitter.com/example" target="_blank" rel="noopener" class="lg:my-1 lg:mx-2 lg:px-4 lg:py-2 sm:px-5 sm:py-2">
+            <a href="https://twitter.com/example" target="_blank" rel="noopener" class="lg:my-1 lg:mx-2 lg:px-4 lg:py-2 sm:py-2">
                 <i class="iconfont icon-twitter"></i>
                 <span class="menu-title hidden lg:inline">menu.twitter</span>
             </a>
         </span>
     
         <span class="social-item mr-2 mb-2">
-            <a href="/blog/atom.xml" class="lg:my-1 lg:mx-2 lg:px-4 lg:py-2 sm:px-5 sm:py-2">
+            <a href="/blog/atom.xml" class="lg:my-1 lg:mx-2 lg:px-4 lg:py-2 sm:py-2">
                 <i class="iconfont icon-rss"></i>
                 <span class="menu-title hidden lg:inline">menu.rss</span>
             </a>
